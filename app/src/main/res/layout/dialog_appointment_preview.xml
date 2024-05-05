@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialogServiceNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/serviceNameValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dialogStaffNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Staff:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/staffNameValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dialogDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/dateValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dialogTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timeValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dialogPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/priceValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/dialogAppointmentIDText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appointment Number:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/appointmentIDValueText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="We look forward to serving you!"
+        android:textStyle="bold" />
+
+</LinearLayout>

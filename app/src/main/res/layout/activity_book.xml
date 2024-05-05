@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".book">
+
+    <TextView
+        android:id="@+id/selectedServiceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Selected Service:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/serviceNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedServiceText"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        tools:text="Haircut" />
+
+    <TextView
+        android:id="@+id/selectStaffText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/serviceNameText"
+        android:layout_margin="16dp"
+        android:text="Select Staff:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/staffRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/selectStaffText"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/staff_item" />
+
+    <TextView
+        android:id="@+id/selectDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/staffRecyclerView"
+        android:layout_margin="16dp"
+        android:text="Select Date:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/selectDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectDateText"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Choose Date" />
+
+    <TextView
+        android:id="@+id/selectTimeSlotText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectDateButton"
+        android:layout_margin="16dp"
+        android:text="Select Time Slot:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/timeSlotRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@id/bottomBar"
+        android:layout_below="@id/selectTimeSlotText"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/time_slot_item" />
+
+    <Button
+        android:id="@+id/bookAppointmentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/timeSlotRecyclerView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="607dp"
+        android:text="Book Appointment" />
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/StaffPage"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageVie9jjw14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:id="@+id/textV28hiew7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="Staff"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/AppointmentsPage"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image8hh2View14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/user"
+                android:src="@drawable/schedule" />
+
+            <TextView
+                android:id="@+id/textVi2hew7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="Appoinmtments"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/HomePage"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageVie33wa4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/user"
+                android:src="@drawable/home" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="Home"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ProfilePage"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageview11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/user"
+                android:src="@drawable/stafficon" />
+
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="Profile"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
